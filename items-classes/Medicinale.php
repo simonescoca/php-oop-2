@@ -4,8 +4,8 @@
         public $principio_attivo;
         public $dosaggio;
 
-        function __construct (string $principio_attivo, string $dosaggio, int $id, string $nome, string $descrizione, float $prezzo_euro, string $categoria, float $rating) {
-            parent::__construct ($id, $nome, $descrizione, $prezzo_euro, $categoria, $rating);
+        function __construct (string $principio_attivo, string $dosaggio, int $id, string $nome, string $descrizione, float $prezzo_euro, string $categoria, float $rating, string $image) {
+            parent::__construct ($id, $nome, $descrizione, $prezzo_euro, $categoria, $rating, $image);
             $this -> principio_attivo = $principio_attivo;
             $this -> dosaggio = $dosaggio;
         }
